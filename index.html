@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Presupuesto</title>
+    <link href="css/estilos.css" rel='stylesheet'/>
+</head>
+<body onload='cargarAPP ()'>
+    
+    <div class="cabecero">
+        <div class="presupuesto">
+            <div class="presupuesto_titulo">
+                Presupuesto Disponible
+            </div>
+            <div class="presupuesto_valor" id='presupuesto'>
+                +2,000.00
+            </div>
+            <div class="presupuesto_ingreso limpiarEstilos" >
+                <div class="presupuesto_ingreso--texto">Ingresos</div>
+                <div class="derecha">
+                    <div class="presupuesto_ingreso--valor" id='ingresos'>+4,000.00</div>
+                    <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
+                </div>
+
+
+            </div>
+            <div class="presupuesto_egreso limpiarEstilos" >
+                <div class="presupuesto_egreso--texto">Egresos</div>
+                <div class="derecha limpiarEstilos" >
+                    <div class="presupuesto_egreso--valor" id='egresos'>-1,500.00</div>
+                    <div class="presupuesto_egreso--porcentaje" id='porcentaje'>45%</div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="contenedor limpiarEstilos">
+        <div class="ingreso">
+            <h2 class='ingreso_titulo'>Ingresos</h2>
+            <div id='lista-ingresos'>
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Salario</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">+2,500.00</div>
+                    </div>
+                </div>
+
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Mancuerna 5kg</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">+1,000.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src='js/Dato.js'></script>
+    <script src='js/Ingreso.js'></script>
+    <script src='js/Egreso.js'></script>
+    <script src='js/app.js'></script>
+</body>
+</html>
