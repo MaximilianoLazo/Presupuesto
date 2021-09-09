@@ -42,28 +42,60 @@
         <div class="ingreso">
             <h2 class='ingreso_titulo'>Ingresos</h2>
             <div id='lista-ingresos'>
+
                 <div class="elemento limpiarEstilos">
-                    <div class="elemento_descripcion">Salario</div>
+                    <div class="elemento_descripcion">x2 Mancuernas 16kg</div>
                     <div class="derecha limpiarEstilos">
                         <div class="elemento_valor">+2,500.00</div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar-btn">
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="elemento limpiarEstilos">
-                    <div class="elemento_descripcion">Mancuerna 5kg</div>
+                    <div class="elemento_descripcion">x2 Mancuernas 10kg</div>
                     <div class="derecha limpiarEstilos">
-                        <div class="elemento_valor">+1,000.00</div>
+                        <div class="elemento_valor">+1,800.00</div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar-btn">
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
 
+        <div class="egreso">
+            <h2 class="egreso_titulo">Egresos</h2>
+            <div id='lista_egresos'>
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Cemento x50kg</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">-7,90.00</div>
+                        <div class="elemento_porcentaje">21%</div>
+                        <div class="elemento_eliminar">
+                            <button class="elemento_eliminar-btn">
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
-
+    
     <script src='js/Dato.js'></script>
     <script src='js/Ingreso.js'></script>
     <script src='js/Egreso.js'></script>
     <script src='js/app.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
